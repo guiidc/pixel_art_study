@@ -69,6 +69,7 @@ function createPixels() {
 }
 createPixels()
 
+
 const white = 'rgb(255, 255, 255)';
 function pixelsWhite() {
     const allPixels = document.querySelectorAll('.pixel')
