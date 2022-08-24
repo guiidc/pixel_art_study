@@ -1,10 +1,13 @@
 const colorPalette = document.querySelector('#color-palette')
-const pixelBoard = document.querySelector('#pixel-board')
 const black = 'rgb(0, 0, 0)';
+const pixelBoard = document.querySelector('#pixel-board')
 
 function createPaletteColor() {
     for (let i = 0; i < 4; i++){
         const div = document.createElement('div');
+        if (i === 0){
+            div.classList.add('selected')
+        }
         div.classList.add('color');
         colorPalette.appendChild(div);
         div.style.background = generateRandomColor(i)
