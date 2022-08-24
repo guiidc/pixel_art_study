@@ -20,4 +20,17 @@ body {
     display: flex;
     width: 10%;
     border: 1px solid black;
+}  
+
+#pixel-board {
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.pixel {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background: white;
 }

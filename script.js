@@ -1,4 +1,5 @@
 const colorPalette = document.querySelector('#color-palette')
+const pixelBoard = document.querySelector('#pixel-board')
 const black = 'rgb(0, 0, 0)';
 
 function createPaletteColor() {
@@ -20,3 +21,12 @@ function generateRandomColor(index){
     const b = Math.floor(Math.random() * 255 + 1)
     return `rgb(${r}, ${g}, ${b})`
 }
+
+function createPixels() {
+    for (let i = 0; i < 25; i++) {
+        const div = document.createElement('div');
+        div.classList.add('pixel');
+        pixelBoard.appendChild(div);
+    }
+}
+createPixels()
