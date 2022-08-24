@@ -16,7 +16,7 @@ function createPaletteColor() {
 }
 createPaletteColor();
 
-function generateRandomColor(index){
+function generateRandomColor(index) {
     if (index === 0) {
         return black
     }
@@ -35,7 +35,7 @@ function createPixels() {
 }
 createPixels();
 
-function getBackgroundColor(event){
+function getBackgroundColor(event) {
     const selected = document.querySelector('.selected')
     selected.classList.remove('selected')
     event.target.classList.add('selected')
