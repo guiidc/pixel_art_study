@@ -1,6 +1,7 @@
 const colorPalette = document.querySelector('#color-palette');
 const black = 'rgb(0, 0, 0)';
 const pixelBoard = document.querySelector('#pixel-board');
+const btnclearBoard = document.querySelector('#clear-board')
 
 function createPaletteColor() {
     for (let i = 0; i < 4; i++){
@@ -48,3 +49,14 @@ let selectedColor = black;
 function paint(event){
     event.target.style.background = selectedColor
 }
+
+const white = 'rgb(255, 255, 255)';
+
+function pixelsWhite(){
+    const allpixels = document.querySelectorAll('.pixel')
+    for (let i = 0; i < allpixels.length; i++) {
+        allpixels[i].style.background = white
+    }
+}
+
+btnclearBoard.addEventListener('click', pixelsWhite)

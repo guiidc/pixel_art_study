@@ -34,3 +34,12 @@ body {
     border: 1px solid black;
     background: white;
 }
+
+.limpar {
+    border: none;
+    padding: 3px 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(178, 34, 123);
+}
