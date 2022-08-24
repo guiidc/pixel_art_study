@@ -29,14 +29,22 @@ function generateRandomColor(index) {
 function createPixels() {
     for (let i = 0; i < 25; i++) {
         const div = document.createElement('div');
+        div.addEventListener('click', paint);
         div.classList.add('pixel');
         pixelBoard.appendChild(div);
     }
 }
 createPixels();
 
-function getBackgroundColor(event) {
+function getBackgroundColor(event) { 
+    selectedColor = event.target.style.background
     const selected = document.querySelector('.selected')
     selected.classList.remove('selected')
     event.target.classList.add('selected')
+} 
+
+let selectedColor = black;
+
+function paint(event){
+    event.target.style.background = selectedColor
 }
